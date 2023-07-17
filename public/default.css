@@ -1,0 +1,31 @@
+body {
+	overflow-y: auto;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+  justify-content: center;
+} 
+
+#gameBoard {
+  width: 400px;
+}
+/* Add your CSS styles for positioning and styling the player images and chessboard here */
+.player-image {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.player-image h2 {
+    margin-bottom: 5px;
+}
+
+.player-image img {
+    width: 75px;
+    height:75px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+
