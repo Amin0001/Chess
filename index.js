@@ -12,6 +12,9 @@ http.listen(port, function() {
   console.log('listening on *: ' + port);
 });
 // setup my socket server
+var io = require('socket.io')(http, {
+  path: '/socket.io'
+});
 
 var io = require('socket.io')(http);
 io.on('connection', function(socket) {
